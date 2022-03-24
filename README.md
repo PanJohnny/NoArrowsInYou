@@ -1,2 +1,2 @@
 # NAIY
-One mixin mod that disables rendering of arrows on your client player model.
+Mod that stops from rendering bee stings and arrows in your player model.

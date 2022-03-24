@@ -4,7 +4,8 @@
   "package": "com.panjohnny.naiy.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "GetRidOfStuckArrows"
+    "GetRidOfStuckArrows",
+    "GetRidOfBeeStings"
   ],
   "injectors": {
     "defaultRequire": 1
