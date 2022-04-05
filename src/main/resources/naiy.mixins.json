@@ -5,7 +5,14 @@
   "compatibilityLevel": "JAVA_17",
   "client": [
     "GetRidOfStuckArrows",
-    "GetRidOfBeeStings"
+    "GetRidOfBeeStings",
+    "GetRidOfArmor",
+    "GetRidOfHeldItem",
+    "GetRidOfHead",
+    "GetRidOfElytra",
+    "GetRidOfTridentRiptide",
+    "GetRidOfShoulderParrot",
+    "PlayerEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

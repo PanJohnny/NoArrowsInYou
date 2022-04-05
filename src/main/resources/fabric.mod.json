@@ -4,15 +4,15 @@
   "version": "${version}",
 
   "name": "No arrows in You!",
-  "description": "Disables arrow rendering on the player.",
+  "description": "Allows you to change varios aspects of the player rendering. Such as: disabling arrows and bee stigns in player.",
   "authors": [
     "PanJohnny"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mods/naiy",
-    "sources": "https://github.com/PanJohnny/NoArrowsInYou"
+    "sources": "https://github.com/PanJohnny/NoArrowsInYou",
+    "issues": "https://github.com/PanJohnny/NoArrowsInYou/issues"
   },
-
   "license": "CC0",
   "icon": "assets/naiy/icon.png",
 
@@ -24,5 +24,16 @@
     "fabricloader": ">=0.13.3",
     "minecraft": "1.18.x",
     "java": ">=17"
+  },
+  "recommends": {
+    "modmenu": ">=3.1.0"
+  },
+  "entrypoints": {
+    "modmenu": [
+      "com.panjohnny.naiy.config.NAIYConfigScreen"
+    ],
+    "client": [
+      "com.panjohnny.naiy.NAIY"
+    ]
   }
 }
