@@ -21,7 +21,7 @@ public class NAIY implements ClientModInitializer {
     }
 
     public static boolean isLocalPlayer(Entity entity) {
-        if(NAIY.getConfig().onlyLocal)
+        if(!NAIY.getConfig().onlyLocal)
             return true;
         return MinecraftClient.getInstance().player != null && MinecraftClient.getInstance().player.getUuid().equals(entity.getUuid());
     }
