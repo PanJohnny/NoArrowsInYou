@@ -8,6 +8,9 @@
   "authors": [
     "PanJohnny"
   ],
+  "contributors": [
+    "gyular - korean translation"
+  ],
   "contact": {
     "homepage": "https://modrinth.com/mods/naiy",
     "sources": "https://github.com/PanJohnny/NoArrowsInYou",
@@ -21,12 +24,12 @@
     "naiy.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.13.3",
-    "minecraft": "1.18.x",
+    "fabricloader": ">=0.14.8",
+    "minecraft": "1.19.x",
     "java": ">=17"
   },
   "recommends": {
-    "modmenu": ">=3.1.0"
+    "modmenu": ">=4.0.0"
   },
   "entrypoints": {
     "modmenu": [
