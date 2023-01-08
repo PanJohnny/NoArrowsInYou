@@ -21,5 +21,12 @@
   "text.autoconfig.naiy.category.general": "일반",
   "text.autoconfig.naiy.category.misc": "기타",
   "text.autoconfig.naiy.category.res": "크기 조절",
-  "text.autoconfig.naiy.category.hands": "손 전환 (1인칭)"
+  "text.autoconfig.naiy.category.hands": "손 전환 (1인칭)",
+  "text.autoconfig.naiy.option.hideHorseArmor": "Hide horse armor",
+  "text.autoconfig.naiy.option.hideCatCollar": "Hide cat collar",
+  "text.autoconfig.naiy.option.hideWolfCollar": "Hide wolf collar",
+  "text.autoconfig.naiy.option.hideDolphinHeldItem": "Hide dolphin held item",
+  "text.autoconfig.naiy.option.hideFoxHeldItem": "Hide fox held item",
+  "text.autoconfig.naiy.option.hideEndermanBlock": "Hide enderman's block",
+  "text.autoconfig.naiy.category.entity": "Entities"
 }

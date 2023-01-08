@@ -24,10 +24,34 @@ public class NAIYConfig implements ConfigData {
     public boolean hideElytra = false;
     @ConfigEntry.Category(value = "misc")
     public boolean hideRiptide = false;
-    @ConfigEntry.Category(value = "misc")
-    public boolean hideShoulderParrot = false;
+
     @ConfigEntry.Category(value = "misc")
     public boolean render = true;
+
+    /*
+     * Entities
+     */
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideShoulderParrot = false;
+
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideHorseArmor = false;
+
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideCatCollar = false;
+
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideWolfCollar = false;
+
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideDolphinHeldItem = false;
+
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideFoxHeldItem = false;
+
+    @ConfigEntry.Category(value = "entity")
+    public boolean hideEndermanBlock = false;
+
 
     @ConfigEntry.Category(value = "res")
     public boolean resize = false;

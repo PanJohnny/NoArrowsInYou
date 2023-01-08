@@ -17,9 +17,16 @@
   "text.autoconfig.naiy.option.leftArm": "Render left arm",
   "text.autoconfig.naiy.option.rightArm": "Render right arm",
   "text.autoconfig.naiy.option.render": "Render player",
+  "text.autoconfig.naiy.option.hideHorseArmor": "Hide horse armor",
+  "text.autoconfig.naiy.option.hideCatCollar": "Hide cat collar",
+  "text.autoconfig.naiy.option.hideWolfCollar": "Hide wolf collar",
+  "text.autoconfig.naiy.option.hideDolphinHeldItem": "Hide dolphin held item",
+  "text.autoconfig.naiy.option.hideFoxHeldItem": "Hide fox held item",
+  "text.autoconfig.naiy.option.hideEndermanBlock": "Hide enderman's block",
   "text.autoconfig.naiy.title": "NAIY Configuration",
   "text.autoconfig.naiy.category.general": "General",
   "text.autoconfig.naiy.category.misc": "Miscellaneous",
   "text.autoconfig.naiy.category.res": "Resize",
-  "text.autoconfig.naiy.category.hands": "Toggle hands (First person)"
+  "text.autoconfig.naiy.category.hands": "Toggle hands (First person)",
+  "text.autoconfig.naiy.category.entity": "Entities"
 }

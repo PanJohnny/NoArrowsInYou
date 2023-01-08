@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "No arrows in You!",
-  "description": "Allows you to change varios aspects of the player rendering. Such as: disabling arrows and bee stigns in player.",
+  "description": "Toggle rendering aspects of game and more...",
   "authors": [
     "PanJohnny"
   ],
