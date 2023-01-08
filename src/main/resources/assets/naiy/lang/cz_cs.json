@@ -17,9 +17,16 @@
   "text.autoconfig.naiy.option.leftArm": "Vykreslit levou ruku",
   "text.autoconfig.naiy.option.rightArm": "Vykreslit pravou ruku",
   "text.autoconfig.naiy.option.render": "Vykreslit hráče",
+  "text.autoconfig.naiy.option.hideHorseArmor": "Schovat koní brnění",
+  "text.autoconfig.naiy.option.hideCatCollar": "Schovat kočičí obojek",
+  "text.autoconfig.naiy.option.hideWolfCollar": "Schovat psí obojek",
+  "text.autoconfig.naiy.option.hideDolphinHeldItem": "Schovat předmět, který má delfín v puse",
+  "text.autoconfig.naiy.option.hideFoxHeldItem": "Schovat předmět, který má liška v puse",
+  "text.autoconfig.naiy.option.hideEndermanBlock": "Schovat block endermena",
   "text.autoconfig.naiy.title": "NAIY Nastavení",
   "text.autoconfig.naiy.category.general": "Obecné",
   "text.autoconfig.naiy.category.misc": "Ostatní",
   "text.autoconfig.naiy.category.res": "Změnit velikost",
-  "text.autoconfig.naiy.category.hands": "Přepnout vyditelnost rukou (první osoba)"
+  "text.autoconfig.naiy.category.hands": "Přepnout vyditelnost rukou (první osoba)",
+  "text.autoconfig.naiy.category.entity": "Entity"
 }

@@ -1,4 +1,4 @@
-package com.panjohnny.naiy.mixin;
+package com.panjohnny.naiy.mixin.misc;
 
 import com.panjohnny.naiy.NAIY;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
@@ -14,28 +14,28 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(PlayerEntityRenderer.class)
 public class PlayerEntityRendererMixin {
     @Inject(method = "scale(Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/client/util/math/MatrixStack;F)V", at = @At("TAIL"))
-    public void scale(LivingEntity entity, MatrixStack matrices, float amount, CallbackInfo ci) {
+    public void naiy$scale(LivingEntity entity, MatrixStack matrices, float amount, CallbackInfo ci) {
         if (NAIY.isLocalPlayer(entity) && NAIY.getConfig().resize) {
             matrices.scale(NAIY.getConfig().resX, NAIY.getConfig().resY, NAIY.getConfig().resZ);
         }
     }
 
     @Inject(method = "renderRightArm", at = @At("HEAD"), cancellable = true)
-    public void renderRightArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player,CallbackInfo ci) {
+    public void naiy$renderRightArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player,CallbackInfo ci) {
         if(NAIY.isLocalPlayer(player) && !NAIY.getConfig().rightArm) {
             ci.cancel();
         }
     }
 
     @Inject(method = "renderLeftArm", at = @At("HEAD"), cancellable = true)
-    public void renderLeftArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player,CallbackInfo ci) {
+    public void naiy$renderLeftArm(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity player,CallbackInfo ci) {
         if(NAIY.isLocalPlayer(player) && !NAIY.getConfig().leftArm) {
             ci.cancel();
         }
     }
 
     @Inject(method="render(Lnet/minecraft/client/network/AbstractClientPlayerEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V", at=@At("HEAD"), cancellable = true)
-    public void render(AbstractClientPlayerEntity player, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, CallbackInfo ci) {
+    public void naiy$render(AbstractClientPlayerEntity player, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, CallbackInfo ci) {
         if(NAIY.isLocalPlayer(player) && !NAIY.getConfig().render) {
             ci.cancel();
         }
