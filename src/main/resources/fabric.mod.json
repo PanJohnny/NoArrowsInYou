@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "No arrows in You!",
-  "description": "Toggle rendering aspects of game and more...",
+  "description": "Are You bored ",
   "authors": [
     "PanJohnny"
   ],
@@ -24,12 +24,12 @@
     "naiy.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.8",
-    "minecraft": "1.19.x",
+    "fabricloader": ">=0.14.22",
+    "minecraft": "1.20.x",
     "java": ">=17"
   },
   "recommends": {
-    "modmenu": ">=4.0.0"
+    "modmenu": ">=7.1.0"
   },
   "entrypoints": {
     "modmenu": [
