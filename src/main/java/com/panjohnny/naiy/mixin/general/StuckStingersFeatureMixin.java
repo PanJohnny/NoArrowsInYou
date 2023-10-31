@@ -11,9 +11,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(StuckStingersFeatureRenderer.class)
-public class StuckStingersFeatureMixin {
+public abstract class StuckStingersFeatureMixin {
     @Inject(method = "renderObject", at = @At("HEAD"), cancellable = true)
-    public void naiy$render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, Entity entity, float directionX, float directionY, float directionZ, float tickDelta, CallbackInfo ci) {
+    public void naiy$doNotRenderStuckStingers(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, Entity entity, float directionX, float directionY, float directionZ, float tickDelta, CallbackInfo ci) {
         if(NAIY.isLocalPlayer(entity) && NAIY.getConfig().hideStings) {
             ci.cancel();
         }

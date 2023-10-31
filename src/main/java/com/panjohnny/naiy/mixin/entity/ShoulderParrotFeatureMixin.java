@@ -11,9 +11,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ShoulderParrotFeatureRenderer.class)
-public class ShoulderParrotFeatureMixin {
+public abstract class ShoulderParrotFeatureMixin {
     @Inject(method = "render(Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;ILnet/minecraft/entity/player/PlayerEntity;FFFFFF)V", at = @At("HEAD"), cancellable = true)
-    public void naiy$render(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, PlayerEntity playerEntity, float f, float g, float h, float j, float k, float l, CallbackInfo ci) {
+    public void naiy$doNotRenderShoulderParrot(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, PlayerEntity playerEntity, float f, float g, float h, float j, float k, float l, CallbackInfo ci) {
         if(NAIY.isLocalPlayer(playerEntity) && NAIY.getConfig().hideShoulderParrot) {
             ci.cancel();
         }
