@@ -5,6 +5,7 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.render.entity.state.PlayerEntityRenderState;
 import net.minecraft.entity.Entity;
 
 public class NAIY implements ClientModInitializer {
@@ -24,5 +25,11 @@ public class NAIY implements ClientModInitializer {
         if(!NAIY.getConfig().onlyLocal)
             return true;
         return MinecraftClient.getInstance().player != null && MinecraftClient.getInstance().player.getUuid().equals(entity.getUuid());
+    }
+
+    public static boolean isLocalPlayer(PlayerEntityRenderState state) {
+        if(!NAIY.getConfig().onlyLocal)
+            return true;
+        return MinecraftClient.getInstance().player != null && state.playerName != null && MinecraftClient.getInstance().player.getStringifiedName().equals(state.playerName.getLiteralString());
     }
 }

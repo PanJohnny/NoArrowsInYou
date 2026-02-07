@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.panjohnny.naiy.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_21",
   "client": [
     "entity.CatCollarFeatureMixin",
     "entity.DolphinHeldItemFeatureMixin",
@@ -17,6 +17,7 @@
     "misc.ElytraFeatureMixin",
     "misc.HeadFeatureMixin",
     "misc.HeldItemFeatureMixin",
+    "misc.LivingEntityRendererMixin",
     "misc.PlayerEntityRendererMixin",
     "misc.TridentRiptideFeatureMixin"
   ],

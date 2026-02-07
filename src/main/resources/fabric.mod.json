@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "No arrows in You!",
-  "description": "Are You bored ",
+  "description": "A mod that prevents some features from being rendered",
   "authors": [
     "PanJohnny"
   ],
@@ -24,9 +24,9 @@
     "naiy.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.22",
-    "minecraft": "1.20.x",
-    "java": ">=17"
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
   },
   "recommends": {
     "modmenu": ">=7.1.0"

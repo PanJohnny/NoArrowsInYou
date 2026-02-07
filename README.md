@@ -29,3 +29,5 @@ Configuration is fully costumizable and you should use modmenu for that.
 - Hide enderman's block
 # Special thanks to
 [@Gyular](https://modrinth.com/user/gyular) - korean translation
+
+TODO: misc nefunguje, resize nefunguje, shoulder parrot nefunguje, přidat mixin pro sedlo,  

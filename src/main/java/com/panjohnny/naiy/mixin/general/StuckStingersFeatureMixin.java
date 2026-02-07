@@ -1,21 +1,20 @@
 package com.panjohnny.naiy.mixin.general;
 
 import com.panjohnny.naiy.NAIY;
-import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.feature.StuckStingersFeatureRenderer;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
+import net.minecraft.client.render.entity.state.PlayerEntityRenderState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(StuckStingersFeatureRenderer.class)
 public abstract class StuckStingersFeatureMixin {
-    @Inject(method = "renderObject", at = @At("HEAD"), cancellable = true)
-    public void naiy$doNotRenderStuckStingers(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, Entity entity, float directionX, float directionY, float directionZ, float tickDelta, CallbackInfo ci) {
-        if(NAIY.isLocalPlayer(entity) && NAIY.getConfig().hideStings) {
-            ci.cancel();
+    @Inject(method = "getObjectCount", at = @At("HEAD"), cancellable = true)
+    public void naiy$doNotRenderStuckStingers(PlayerEntityRenderState playerRenderState, CallbackInfoReturnable<Integer> cir) {
+        if(NAIY.isLocalPlayer(playerRenderState) && NAIY.getConfig().hideStings) {
+            cir.setReturnValue(0);
+            cir.cancel();
         }
     }
 }
